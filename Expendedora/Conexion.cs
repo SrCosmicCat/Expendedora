@@ -11,6 +11,7 @@ namespace Expendedora
     {
         //Declaracion de atributos para realizar la conexión
         //Conexion
+
         String servidor = "localhost"; //Nombre o ip del servidor MySql
         String bd = "MaquinaExpendedora";
         String usuario = "root";
@@ -19,20 +20,17 @@ namespace Expendedora
 
         public Conexion()
         {
-            Conectar();
-        }
-
-        public void Conectar()
-        {
-            string connectionString = "server=" + servidor + "; database=" + bd + "; user id=" + usuario + "; password="+ password + ";";
-
-            connection = new MySqlConnection(connectionString);
+            abrirBD();
         }
 
         public bool abrirBD()
         {
             try
             {
+                string connectionString = "server=" + servidor + "; database=" + bd + "; user id=" + usuario + "; password=" + password + ";";
+
+                connection = new MySqlConnection(connectionString);
+
                 connection.Open(); //Abrir conexion
                 Console.WriteLine("BD conectada");
                 return true;
