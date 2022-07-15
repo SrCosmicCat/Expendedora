@@ -65,6 +65,9 @@
             this.pctProducto = new System.Windows.Forms.PictureBox();
             this.txtCambio = new System.Windows.Forms.TextBox();
             this.mglProducto = new System.Windows.Forms.ImageList(this.components);
+            this.txtProducto = new System.Windows.Forms.TextBox();
+            this.btnComprar = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pct8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct2)).BeginInit();
@@ -75,6 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pct9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctProducto)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pct8
@@ -423,7 +427,7 @@
             this.rdb1.Font = new System.Drawing.Font("Digital-7 Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdb1.ForeColor = System.Drawing.Color.White;
             this.rdb1.ImageKey = "(ninguno)";
-            this.rdb1.Location = new System.Drawing.Point(478, 372);
+            this.rdb1.Location = new System.Drawing.Point(35, 4);
             this.rdb1.Name = "rdb1";
             this.rdb1.Size = new System.Drawing.Size(54, 27);
             this.rdb1.TabIndex = 28;
@@ -438,7 +442,7 @@
             this.txtDinero.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDinero.Font = new System.Drawing.Font("Digital-7 Mono", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDinero.ForeColor = System.Drawing.Color.White;
-            this.txtDinero.Location = new System.Drawing.Point(467, 301);
+            this.txtDinero.Location = new System.Drawing.Point(467, 318);
             this.txtDinero.Name = "txtDinero";
             this.txtDinero.Size = new System.Drawing.Size(120, 27);
             this.txtDinero.TabIndex = 29;
@@ -453,7 +457,7 @@
             this.rdb2.Font = new System.Drawing.Font("Digital-7 Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdb2.ForeColor = System.Drawing.Color.White;
             this.rdb2.ImageKey = "(ninguno)";
-            this.rdb2.Location = new System.Drawing.Point(478, 403);
+            this.rdb2.Location = new System.Drawing.Point(35, 35);
             this.rdb2.Name = "rdb2";
             this.rdb2.Size = new System.Drawing.Size(54, 27);
             this.rdb2.TabIndex = 30;
@@ -471,7 +475,7 @@
             this.rdb5.Font = new System.Drawing.Font("Digital-7 Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdb5.ForeColor = System.Drawing.Color.White;
             this.rdb5.ImageKey = "(ninguno)";
-            this.rdb5.Location = new System.Drawing.Point(478, 434);
+            this.rdb5.Location = new System.Drawing.Point(35, 66);
             this.rdb5.Name = "rdb5";
             this.rdb5.Size = new System.Drawing.Size(54, 27);
             this.rdb5.TabIndex = 31;
@@ -489,7 +493,7 @@
             this.rdb10.Font = new System.Drawing.Font("Digital-7 Mono", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdb10.ForeColor = System.Drawing.Color.White;
             this.rdb10.ImageKey = "(ninguno)";
-            this.rdb10.Location = new System.Drawing.Point(478, 465);
+            this.rdb10.Location = new System.Drawing.Point(35, 97);
             this.rdb10.Name = "rdb10";
             this.rdb10.Size = new System.Drawing.Size(66, 27);
             this.rdb10.TabIndex = 32;
@@ -504,7 +508,7 @@
             this.pctProducto.Location = new System.Drawing.Point(375, 598);
             this.pctProducto.Name = "pctProducto";
             this.pctProducto.Size = new System.Drawing.Size(72, 71);
-            this.pctProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pctProducto.TabIndex = 33;
             this.pctProducto.TabStop = false;
             // 
@@ -514,11 +518,11 @@
             this.txtCambio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCambio.Font = new System.Drawing.Font("Digital-7 Mono", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCambio.ForeColor = System.Drawing.Color.White;
-            this.txtCambio.Location = new System.Drawing.Point(478, 590);
+            this.txtCambio.Location = new System.Drawing.Point(467, 591);
             this.txtCambio.Name = "txtCambio";
             this.txtCambio.Size = new System.Drawing.Size(120, 27);
             this.txtCambio.TabIndex = 34;
-            this.txtCambio.Text = "$00";
+            this.txtCambio.Text = "s";
             // 
             // mglProducto
             // 
@@ -534,6 +538,40 @@
             this.mglProducto.Images.SetKeyName(7, "arizona.png");
             this.mglProducto.Images.SetKeyName(8, "karate.png");
             // 
+            // txtProducto
+            // 
+            this.txtProducto.BackColor = System.Drawing.Color.Black;
+            this.txtProducto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtProducto.Font = new System.Drawing.Font("Digital-7 Mono", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProducto.ForeColor = System.Drawing.Color.White;
+            this.txtProducto.Location = new System.Drawing.Point(467, 285);
+            this.txtProducto.Name = "txtProducto";
+            this.txtProducto.Size = new System.Drawing.Size(120, 27);
+            this.txtProducto.TabIndex = 35;
+            // 
+            // btnComprar
+            // 
+            this.btnComprar.Location = new System.Drawing.Point(467, 367);
+            this.btnComprar.Name = "btnComprar";
+            this.btnComprar.Size = new System.Drawing.Size(120, 24);
+            this.btnComprar.TabIndex = 36;
+            this.btnComprar.Text = "comprar";
+            this.btnComprar.UseVisualStyleBackColor = true;
+            this.btnComprar.Click += new System.EventHandler(this.btnComprar_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rdb2);
+            this.groupBox1.Controls.Add(this.rdb1);
+            this.groupBox1.Controls.Add(this.rdb5);
+            this.groupBox1.Controls.Add(this.rdb10);
+            this.groupBox1.Location = new System.Drawing.Point(467, 397);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(125, 128);
+            this.groupBox1.TabIndex = 37;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
             // frmExpendedora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -542,13 +580,12 @@
             this.BackgroundImage = global::Expendedora.Properties.Resources.MaquinaExpendedora;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(610, 702);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnComprar);
+            this.Controls.Add(this.txtProducto);
             this.Controls.Add(this.txtCambio);
             this.Controls.Add(this.pctProducto);
-            this.Controls.Add(this.rdb10);
-            this.Controls.Add(this.rdb5);
-            this.Controls.Add(this.rdb2);
             this.Controls.Add(this.txtDinero);
-            this.Controls.Add(this.rdb1);
             this.Controls.Add(this.btn5);
             this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn7);
@@ -589,6 +626,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pct9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctProducto)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -630,6 +669,9 @@
         private System.Windows.Forms.PictureBox pctProducto;
         private System.Windows.Forms.TextBox txtCambio;
         private System.Windows.Forms.ImageList mglProducto;
+        private System.Windows.Forms.TextBox txtProducto;
+        private System.Windows.Forms.Button btnComprar;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
